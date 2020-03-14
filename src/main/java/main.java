@@ -23,10 +23,16 @@ public class main {
         driver.manage().window().fullscreen();
         goToIhalePage();
         startTheProcess();
+
+
     }
     public static void goToIhalePage(){
         driver.findElement(By.xpath("//*[@onclick=\"handleOutboundLinkClicks('İHALE','Ust Menu','Arama Sonuc');\"]")).click();
         System.out.println("İhale Sayfasına Girildi");
+        System.out.println("İhale Sayfasına Girildi");
+
+
+
     }
     public static void startTheProcess() throws InterruptedException {
         int numberOfLinksOnThePage=20;
